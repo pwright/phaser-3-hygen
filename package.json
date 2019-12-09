@@ -4,13 +4,13 @@
   "description": "A Phaser 3 TypeScript project template that uses Hygen.",
   "main": "dist/bin.js",
   "bin": {
-    "phaser-hygen": "./dist/bin.js"
+    "phaser-3-hygen": "./dist/bin.js"
   },
   "scripts": {
     "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
     "build": "rm -rf dist && tsc",
     "package-publish": "npm run build && npm run bundle && npm publish",
-    "package-publish:beta": "npm run build && npm run bundle && npm publish--tag beta",
+    "package-publish:beta": "npm run build && npm run bundle && npm publish --tag beta",
     "update": "npm update && npm audit fix && npm outdated",
     "bundle": "cp -r _templates dist/templates"
   },

@@ -1,9 +1,0 @@
-tsconfig.json
-tslint.json
-src/*
-node_modules
-.npmrc
-.gitignore
-.DS_Store
-.github
-!dist/*

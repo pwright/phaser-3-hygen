@@ -7,39 +7,27 @@ A [Hygen](https://github.com/jondot/hygen) [Phaser 3](https://github.com/photons
 This section provides the basic commands needed to generate a project using this generator. For more detailed instructions and more information, please see relevant section of the `README.md`.
 
 ```Bash
-npx @scottwestover/phaser-3-hygen phaser template
+npx phaser-3-hygen phaser template
 ```
-
-TODO: insert image of generator running in cli
 
 You should then be prompted for some additional infomation about your project. Once the project is generated, navigate to that generated project folder and run `npm install` and then `npm run dev` to launch the `dev` server with your Phaser 3 game.
 
-TODO: insert image of Phaser 3 game
-
 ## Generate a project
 
-In order to run the generator, you will need to use `npx` to run the generator, or you will need to install the package globally. To install this package, you will need to tell `npm` how to download this package from the GitHub Package repository. To do this, you can create a `.npmrc` file in the same directory as your `package.json` and add the following line to that file:
-
-```
-@scottwestover:registry=https://npm.pkg.github.com
-```
-
-You can also add the same line to your per-user `~/.npmrc` file if you plan to use this package in many projects. **This is required if you plan to install this package with `npx`**
-
-You can read more about this process here: [Installing GitHub Pacakges](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#installing-a-package)
+In order to run the generator, you will need to use `npx` to run the generator, or you will need to install the package globally.
 
 ### Install
 
 To install the package globally:
 
 ```Bash
-npm install -g @scottwestover/phaser-3-hygen
+npm install -g phaser-3-hygen
 ```
 
 Or, you can use `npx` to install the package:
 
 ```Bash
-npx @scottwestover/phaser-3-hygen phaser help
+npx phaser-3-hygen phaser help
 ```
 
 ### Running the generator
@@ -64,9 +52,9 @@ If you use `npx` to install the package, the generator should be ran automatical
 
 | Command | Description |
 |---------|-------------|
-| `phaser-hygen phaser help` | Displays the available actions you can take for this generator |
-| `phaser-hygen phaser scene` | Creates a basic Scene Class that extends the `Phaser.Scene` class |
-| `phaser-hygen phaser template` | Creates a basic Phaser 3 TypeScript project |
+| `phaser-3-hygen phaser help` | Displays the available actions you can take for this generator |
+| `phaser-3-hygen phaser scene` | Creates a basic Scene Class that extends the `Phaser.Scene` class |
+| `phaser-3-hygen phaser template` | Creates a basic Phaser 3 TypeScript project |
 
 ### Running the project
 
