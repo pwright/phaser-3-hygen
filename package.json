@@ -1,6 +1,6 @@
 {
-  "name": "@scottwestover/phaser-3-hygen",
-  "version": "0.0.2-beta.3",
+  "name": "phaser-3-hygen",
+  "version": "0.0.1-beta.0",
   "description": "A Phaser 3 TypeScript project template that uses Hygen.",
   "main": "dist/bin.js",
   "bin": {
@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
     "build": "rm -rf dist && tsc",
-    "package-publish": "npm run build && npm run bundle && npm publish --registry https://npm.pkg.github.com/",
-    "package-publish:beta": "npm run build && npm run bundle && npm publish --registry https://npm.pkg.github.com/ --tag beta",
+    "package-publish": "npm run build && npm run bundle && npm publish",
+    "package-publish:beta": "npm run build && npm run bundle && npm publish--tag beta",
     "update": "npm update && npm audit fix && npm outdated",
     "bundle": "cp -r _templates dist/templates"
   },
@@ -24,12 +24,5 @@
   },
   "dependencies": {
     "hygen": "^5.0.3"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://git@github.com/scottwestover/phaser-3-hygen.git"
   }
 }
