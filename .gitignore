@@ -1,0 +1,5 @@
+node_modules
+tsc-out
+.npmrc
+.DS_Store
+dist
